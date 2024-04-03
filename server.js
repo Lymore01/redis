@@ -17,18 +17,18 @@ app.get("/data", (req, res) => {
   client.set("key", "value", (err, reply) => {
     if (err) {
       console.log(err);
-    //   client.quit(); // Close client on error
+      client.quit(); // Close client on error
       return res.status(500).json({ message: "Error setting data!" });
     }
     // get data
     client.get("key", (err, data) => {
       if (err) {
         console.error(err);
-        // client.quit(); //close the client on error
+        client.quit(); //close the client on error
 
         return res.status(400).json({ message: "No data found" });
       }
-    //   client.quit(); //close the client after operations
+      client.quit(); //close the client after operations
       return res.status(200).json({ data });
     });
   });
