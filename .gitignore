@@ -1,0 +1,31 @@
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Environment variables file
+.env
+
+# Log files
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for TypeScript transpilation output
+dist/
+
+# Directory for coverage reports
+coverage/
+
+# macOS-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db
+.vercel
